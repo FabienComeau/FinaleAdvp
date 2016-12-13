@@ -17,7 +17,7 @@
                 <div class="col-md-6">
                     <div class="about-text">
                         <h3>Hello World</h3>
-                        <p>If you are into web development and programing you probably know that at times it can be a little overwhelming.  There is so much to learn and retain that we wanted to help by making the ADVP In Class Demos excusable by a click of a button. <br /> Starting with the SQL demo we hope to bring more to you in the future to help with Database, PHP and more. </p>
+                        <p>If you are into web develLSGKPOTKYPOTJKTPOopment and programing you probably know that at times it can be a little overwhelming.  There is so much to learn and retain that we wanted to help by making the ADVP In Class Demos excusable by a click of a button. <br /> Starting with the SQL demo we hope to bring more to you in the future to help with Database, PHP and more. </p>
                         <p>!!!!!!!Do we want a second box here? !!!!!!!! Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo..</p>
                     </div>
                 </div>
