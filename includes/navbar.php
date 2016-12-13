@@ -2,25 +2,25 @@
 
 $home = array(
     'page' => 'Home',
-    'url' => '/Advp_Web_Study/index.php',
+    'url' => '/FinaleAdvp/index.php',
     'icon' => 'home'
 );
 
 $about = array(
     'page' => 'About Us',
-    'url' => '/Advp_Web_Study/about_us.php',
+    'url' => '/FinaleAdvp/about_us.php',
     'icon' => 'cultery'
 );
 
 $services = array(
     'page' => 'Services',
-    'url' => '/Advp_Web_Study/services.php',
+    'url' => '/FinaleAdvp/services.php',
     'icon' => 'phone'
 );
 
 $contact = array(
     'page' => 'Contact',
-    'url' => '/Advp_Web_Study/contact.php',
+    'url' => '/FinaleAdvp/contact.php',
     'icon' => 'info-sign'
 );
 
