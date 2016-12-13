@@ -66,7 +66,7 @@
               <td>$demoName</td>
               
               <td>$chapterNumber</td>    
-              <td><a href='/Advp_Web_Study/demoCode.php?id=$demoid'>Demo $demoid</a>              
+              <td><a href='/FinaleAdvp/demoCode.php?id=$demoid'>Demo $demoid</a>              
               </td>
               </tr>";
                         endforeach;
