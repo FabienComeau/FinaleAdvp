@@ -1,0 +1,13 @@
+{
+    "name": "vendor/finale-advp",
+    "description": "Description of project FinaleAdvp.",
+    "authors": [
+        {
+            "name": "fcomeau",
+            "email": "fabien_comeau@yahoo.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "v5.2.16"
+    }
+}

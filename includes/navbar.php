@@ -24,12 +24,19 @@ $contact = array(
     'icon' => 'info-sign'
 );
 
+//$account = array(
+//    'page' => 'Account',
+//    'url' => '/FinaleAdvp/account.php',
+//    'icon' => 'info-sign'
+//);
+
 //build multi-dimensional array
 $pages = array(
     'Home' => $home,
     'About Us' => $about,
     'Services' => $services,
-    'Contact' => $contact
+    'Contact' => $contact,
+   
 );
 
 //var_dump($pages);
@@ -49,4 +56,26 @@ foreach ($pages as $page => $list) {
     }
     //echo "href=\"$url\"><span class=\"glyphicon glyphicon-$icon\"></span> $page</a></li>";
 }
+?>
+
+                        <li class="dropdown "> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <?php
+                                if (empty($_SESSION['user_id'])) {
+                                    ?>
+                                    <li><a href="/FinaleAdvp/register.php">Register<span class='glyphicon glyphicon-user pull-right'></span></a>
+                                    <li><a href="/FinaleAdvp/login.php">Login<span class='glyphicon glyphicon-log-in'></span></a>
+
+    <?php
+} else {
+    ?>
+                                    <li><a href="#">My Account<span class='glyphicon glyphicon-user pull-right'></span></a>
+                                    <li><a href="/FinaleAdvp/logout.php">Logout<span class='glyphicon glyphicon-log-in'></span></a>
+
+    <?php
+}
+?>                                                        
+
+                            </ul>
+                        </li> 
 
