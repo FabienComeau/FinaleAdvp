@@ -161,7 +161,7 @@
                         <!-- Team Member -->
                         <div class="team-member">
                             <!-- Image -->
-                            <img class="img-responsive" src="img/team1.jpg" alt="">
+                            <img class="img-responsive" src="img/team1.png" alt="">
                             <!-- Name -->
                             <h4>Fabien Comeau</h4>
                             <span class="deg">CEO</span> 
@@ -171,7 +171,7 @@
                         <!-- Team Member -->
                         <div class="team-member">
                             <!-- Image -->
-                            <img class="img-responsive" src="img/team2.jpg" alt="">
+                            <img class="img-responsive" src="img/team2.png" alt="">
                             <!-- Name -->
                             <h4>Zachary Bannister</h4>
                             <span class="deg">Programmer</span> 
@@ -181,7 +181,7 @@
                         <!-- Team Member -->
                         <div class="team-member">
                             <!-- Image -->
-                            <img class="img-responsive" src="img/team3.jpg" alt="">
+                            <img class="img-responsive" src="img/team4.png" alt="">
                             <!-- Name -->
                             <h4>Stephanie Saunders</h4>
                             <span class="deg">Creative</span> 
