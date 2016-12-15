@@ -41,7 +41,7 @@
                             
                             echo '<div class="col-sm-4 info-blocks">';
                             echo '<div class="info-blocks-in">';
-                            echo "<h4>Chapter $chapter</h4><br><p>...</p>";                            
+                            echo "<h4>Chapter $chapter</h4><br>";                            
                             echo "<p><a class=\"btn btn-warning\" href='/FinaleAdvp/demo.php?id=$catId' role=\"button\">Demos &raquo;</a></p>";
                             echo '</div>';
                             echo '</div>';

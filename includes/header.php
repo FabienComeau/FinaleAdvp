@@ -25,17 +25,18 @@
     </head>
     <body>
         <?php
-         //var_dump($_SESSION);
-             function __autoload($class){
-                require_once 'classes/'.$class . '.php' ;
-                
-             }
-             //instantiate the database handler
-             $dbh = new DbHandler();
-             
-             //$data=$dbh->getDemoList();
-                //var_dump($data);
-             ?>
+
+        //var_dump($_SESSION);
+        function __autoload($class) {
+            require_once 'classes/' . $class . '.php';
+        }
+
+        //instantiate the database handler
+        $dbh = new DbHandler();
+
+        //$data=$dbh->getDemoList();
+        //var_dump($data);
+        ?>
         <!--<div id="wrapper" class="home-page">-->
         <div class="topbar">
             <div class="container">
@@ -60,8 +61,8 @@
                         <a class="navbar-brand" href="index.php"><img src="" alt="logo"/></a>
 
                     </div>
-                    <div class="navbar-collapse collapse ">
-                        <ul class="nav navbar-nav">
+                    <div class="navbar-collapse collapse" class="breadcrumb">
+                        <ul class="nav navbar-nav" >
                             <?php
                             include 'includes/navbar.php'
                             ?> 
@@ -69,6 +70,7 @@
                     </div>
                 </div>
             </div>
+      
         </header>
         <!-- end header -->
         <section id="banner">

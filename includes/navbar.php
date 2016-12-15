@@ -1,4 +1,30 @@
+<style>
+    .dropdown-menu{
+background: #fcb017;
+background: -moz-linear-gradient(top,  #fcb017 0%, #f9d895 58%, #f9d895 58%, #f9dca2 78%, #f9da9a 98%);
+background: -webkit-linear-gradient(top,  #fcb017 0%,#f9d895 58%,#f9d895 58%,#f9dca2 78%,#f9da9a 98%);
+background: linear-gradient(to bottom,  #fcb017 0%,#f9d895 58%,#f9d895 58%,#f9dca2 78%,#f9da9a 98%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', endColorstr='#f9da9a',GradientType=0 );
+
+
+
+    }
+    
+    .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+        background: #fcb017;
+background: -moz-linear-gradient(top,  #fcb017 0%, #f9dca2 30%, #f9d895 78%, #fcb017 100%);
+background: -webkit-linear-gradient(top,  #fcb017 0%,#f9dca2 30%,#f9d895 78%,#fcb017 100%);
+background: linear-gradient(to bottom,  #fcb017 0%,#f9dca2 30%,#f9d895 78%,#fcb017 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', endColorstr='#fcb017',GradientType=0 );
+
+    }
+    
+</style>
+
+
 <?php
+
+session_start();
 
 $home = array(
     'page' => 'Home',
@@ -36,7 +62,7 @@ $pages = array(
     'About Us' => $about,
     'Services' => $services,
     'Contact' => $contact,
-   
+    
 );
 
 //var_dump($pages);
@@ -58,19 +84,20 @@ foreach ($pages as $page => $list) {
 }
 ?>
 
+
                         <li class="dropdown "> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <?php
                                 if (empty($_SESSION['user_id'])) {
                                     ?>
-                                    <li><a href="/FinaleAdvp/register.php">Register<span class='glyphicon glyphicon-user pull-right'></span></a>
-                                    <li><a href="/FinaleAdvp/login.php">Login<span class='glyphicon glyphicon-log-in'></span></a>
+                                    <li><a href="/FinaleAdvp/register.php">Register</a>
+                                    <li><a href="/FinaleAdvp/login.php">Login</span></a>
 
     <?php
 } else {
     ?>
-                                    <li><a href="#">My Account<span class='glyphicon glyphicon-user pull-right'></span></a>
-                                    <li><a href="/FinaleAdvp/logout.php">Logout<span class='glyphicon glyphicon-log-in'></span></a>
+                                    <li><a href="#">My Account</a>
+                                    <li><a href="/FinaleAdvp/logout.php">Logout</a>
 
     <?php
 }
