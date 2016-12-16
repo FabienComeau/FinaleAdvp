@@ -8,6 +8,17 @@
     </div>
 </section>
 
+<style>
+    
+    /* --- login-- */
+.panel-primary>.panel-heading {
+    color: #000;
+    background-color: #FCB017;
+    border-color: #FCB017;
+}
+    
+</style>
+
 <div class="page-header">
     <div class="container">
         <h2>Login</h2>
@@ -101,16 +112,14 @@
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
-                                    <button type="submit" class="btn btn-success">
-                                        <span class="glyphicon glyphicon-user"></span> Login
-                                    </button>
+                                    <button type="submit" class="btn btn-success">Login</button>                                       
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-xs-4"><a href="#">Forgot Password</a></div>
+                   
                     <div class="col-md-4 col-xs-4"><a href="register.php">Not a Member</a></div>                
                 </div>  
             </div>
