@@ -120,7 +120,7 @@
                 </div>
                 <div class="row">
                    
-                    <div class="col-md-4 col-xs-4"><a href="register.php">Not a Member</a></div>                
+                    <div class="col-md-4 col-xs-4"><a href="register.php">Not a Member?</a></div>                
                 </div>  
             </div>
         <?php //} ?>
