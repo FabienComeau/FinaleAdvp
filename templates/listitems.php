@@ -23,7 +23,7 @@
             </div>
         </div>
         <?php
-        //Get All articles by calling the getArticleList method 
+        //Get All demos by calling the getdemoList method 
         //from the DbHandler class, returning array data in variable
         //$data
 ///////////////////////////////////////////////////////////////////////////////////
@@ -46,11 +46,11 @@
                 } else {
                         $output = "<table class='table table-striped'>
               <thead>
-              <tr>
-              <th>Demo Name</th>
-              <th>Chapter Number</th>
-              <th>Demo Link</th>
-              </tr>
+                <tr>
+                    <th>Demo Name</th>
+                    <th>Chapter Number</th>
+                    <th>Demo Link</th>
+                </tr>
               </thead>
               <tbody>";
  

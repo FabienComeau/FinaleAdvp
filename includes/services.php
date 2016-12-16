@@ -7,6 +7,14 @@
         </div>
     </div>
 </section>
+<!-- breadcrumb -->
+
+<!--<ol class="breadcrumb">
+  <li><a href="/FinaleAdvp/services.php">Chapters</a></li>
+  <li><a href="#">Demos</a></li>
+  <li class="active">Code</li>
+</ol>-->
+
 <section id="content">
     <div class="container content">		
         <!-- Service Blcoks -->

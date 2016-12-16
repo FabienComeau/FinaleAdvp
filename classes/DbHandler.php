@@ -31,6 +31,7 @@ class DbHandler {
         
     }//end of constructor
     
+
     
     //A static function allows to make a calls to it without
     //instantiating the class.  In other words with using the 

@@ -11,11 +11,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', end
     }
     
     .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
-        background: #fcb017;
-background: -moz-linear-gradient(top,  #fcb017 0%, #f9dca2 30%, #f9d895 78%, #fcb017 100%);
-background: -webkit-linear-gradient(top,  #fcb017 0%,#f9dca2 30%,#f9d895 78%,#fcb017 100%);
-background: linear-gradient(to bottom,  #fcb017 0%,#f9dca2 30%,#f9d895 78%,#fcb017 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', endColorstr='#fcb017',GradientType=0 );
+    background: #FCB017
 
     }
     
