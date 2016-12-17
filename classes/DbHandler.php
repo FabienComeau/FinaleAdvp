@@ -58,7 +58,7 @@ class DbHandler {
     
     /**
      * getChapterList() function
-     * Get a list of categories for creating menu system
+     * Get a list of chapters for creating menu system
      */
     public function getChapterList(){
         $sql = "SELECT chapterID, chapterNumber 
@@ -83,7 +83,7 @@ class DbHandler {
     
     /**
      * getDemoList() function
-     * Get a list of categories for creating menu system
+     * Get a list of demos for creating menu system
      */
     public function getDemoList($id){
         
@@ -189,7 +189,7 @@ class DbHandler {
      */
     public function getUserByEmail($email) {
         try {
-            $stmt = $this->conn->prepare("SELECT id, type, email, first_name, last_name, 
+            $stmt = $this->conn->prepare("SELECT id, type, email, first_name, last_name, active,
                                          IF(date_expires>=NOW(),true,false) as notexpired,
                                          IF(type='admin',true,false)as admin
                                          FROM users WHERE email = :email");

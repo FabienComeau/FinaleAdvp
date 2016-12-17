@@ -10,40 +10,58 @@
     </div>
 </section>
 <section id="content">
-    <div class="container content">		
-        <!-- Service Blcoks -->
 
-        <div class="row"> 
-            <div class="col-md-12">
-                <div class="about-logo">
-                    <h3>SQL <span class="color">Demos</span></h3>
-                    <p>For the months of October and November, SQL queries where covered in class. A list of the chapters will be excusable along with the demos that went along with them.  
-                        <br>!!!!!!!!!!!Just to make it look better I would like to put another blerb here about SQL to fill up the space  sgv drbvfdgvrefgv fdgvfdcv fbfdhuhvlksjlkjfdo!!!!!!!!!!!!!</p>
-                </div>  
-            </div>
-        </div>
+    <?php
+    if (isset($_SESSION['user_id']) && isset($_SESSION['fullname']) && empty($_SESSION['active'])) {
+        $userid = $_SESSION['user_id'];
+    } else {
+        $userid = "";
+    }
+
+
+    if ($userid == "") {
+        //USER NOT LOGGED IN? 
+        echo '<h2 class="resreg">Registered Users Only</h2>
+              <p class="resreg">You must be logged in or have an active account to see demos!<br>Check your email to activate your account</p>';
+        ?>
+        <p class="resreg"><a href="login.php" >Login</a><strong> or </strong><a href="register.php">Register</a></p>
         <?php
-        //Get All demos by calling the getdemoList method 
-        //from the DbHandler class, returning array data in variable
-        //$data
+    } else if ($_SESSION['user_id']) {
+        ?>
+        <div class="container content">		
+            <!-- Service Blcoks -->
+
+            <div class="row"> 
+                <div class="col-md-12">
+                    <div class="about-logo">
+                        <h3>SQL <span class="color">Demos</span></h3>
+                        <p>For the months of October and November, SQL queries where covered in class. A list of the chapters will be excusable along with the demos that went along with them.  
+                            <br>!!!!!!!!!!!Just to make it look better I would like to put another blerb here about SQL to fill up the space  sgv drbvfdgvrefgv fdgvfdcv fbfdhuhvlksjlkjfdo!!!!!!!!!!!!!</p>
+                    </div>  
+                </div>
+            </div>
+            <?php
+            //Get All demos by calling the getdemoList method 
+            //from the DbHandler class, returning array data in variable
+            //$data
 ///////////////////////////////////////////////////////////////////////////////////
 
-        if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
-            //get single article for particular id
-            $id = $_GET['id'];
+            if ((isset($_GET['id'])) && (is_numeric($_GET['id']))) {
+                //get single article for particular id
+                $id = $_GET['id'];
 
-            $data = $dbh->getDemoList($id);
-            //var_dump($data);
-          
-               
+                $data = $dbh->getDemoList($id);
+                //var_dump($data);
 
-                    if ($data['error'] == false) {
-                        //success - display data items within html table
-                        $demo = $data['items'];
-                         if (empty($demo)) {
-                    //no article with that id
-                   echo '<h3>No article</h3>';
-                } else {
+
+
+                if ($data['error'] == false) {
+                    //success - display data items within html table
+                    $demo = $data['items'];
+                    if (empty($demo)) {
+                        //no article with that id
+                        echo '<h3>No article</h3>';
+                    } else {
                         $output = "<table class='table table-striped'>
               <thead>
                 <tr>
@@ -53,8 +71,8 @@
                 </tr>
               </thead>
               <tbody>";
- 
-                    
+
+
                         //loop all records creating tr td combination
                         foreach ($demo as $item):
                             $chapterid = $item['chapterID'];
@@ -76,15 +94,16 @@
                         echo $output;
                     }
                 }
-            
-        }else{
-        echo "<h3>This page has been accessed in error.</h3>";
-    }
-                ?>
+            }else {
+                echo "<h3>This page has been accessed in error.</h3>";
+            }
+            ?>
     </div>
 </div>
 
-
+<?php
+    }
+    ?>
 
 
 

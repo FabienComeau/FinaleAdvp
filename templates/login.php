@@ -46,12 +46,14 @@
                         $fullname = $firstname . ' ' . $lastname;
                         $admin = $item['admin'];
                         $expired = $item['notexpired'];
+                        $active = $item['active'];
                     }
                     //store data in session
                     $_SESSION['user_id'] = $userid;
                     $_SESSION['fullname'] = $fullname;
                     $_SESSION['user_not_expired'] = $expired;
                     $_SESSION['user_admin'] = $admin;
+                    $_SESSION['active']= $active;
 
                     //var_dump($_SESSION);
                     echo '<div class="alert alert-success">                      

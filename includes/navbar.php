@@ -20,7 +20,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', end
 
 <?php
 
-session_start();
+
 
 $home = array(
     'page' => 'Home',
