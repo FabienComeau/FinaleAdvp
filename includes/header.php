@@ -1,5 +1,7 @@
 <?php
 ob_start();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,11 +12,7 @@ ob_start();
         <meta name="description" content="" />
         <meta name="author" content="http://webthemez.com" />
         <!-- css -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-        <link href="css/jcarousel.css" rel="stylesheet" />
-        <link href="css/flexslider.css" rel="stylesheet" />
-        <link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet" />       
         <link href="css/style.css" rel="stylesheet" />
         <!--pluging for prism-->
         <link href="prism.css" rel="stylesheet" type="text/css"/>
@@ -24,9 +22,9 @@ ob_start();
         <!--[if lt IE 9]>
               <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
-<?php
-session_start();
-?>
+        <?php
+        session_start();
+        ?>
     </head>
     <body>
         <?php
@@ -41,9 +39,6 @@ session_start();
 
         //$data=$dbh->getDemoList();
         //var_dump($data);
-        
-        
-        
         ?>
         <!--<div id="wrapper" class="home-page">-->
         <div class="topbar">
@@ -71,14 +66,20 @@ session_start();
                     </div>
                     <div class="navbar-collapse collapse" class="breadcrumb">
                         <ul class="nav navbar-nav" >
-                            <?php
-                            include 'includes/navbar.php'
-                            ?> 
+<?php
+include 'includes/navbar.php'
+?> 
+                            <form method="get" action="/FinaleAdvp/search.php" class="navbar-form navbar-right">
+                                <div class="right-inner-addon">
+                                    <input class="form-control typeahead tt-query" type="text" placeholder="Search..." id="s" name="s" autocomplete="off" spellcheck="false"/>
+                                    <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />
+                                </div>
+                            </form>
                         </ul>
                     </div>
                 </div>
             </div>
-      
+
         </header>
         <!-- end header -->
         <section id="banner">

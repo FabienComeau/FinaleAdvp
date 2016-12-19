@@ -10,7 +10,7 @@
  * U - Update
  * D - Delete
  *
- * @author mwilliams
+ * @author fabien and stephanie
  */
 class DbHandler {
     //private connection variable
@@ -29,18 +29,8 @@ class DbHandler {
         }
         
         
-    }//end of constructor
+    }//end of constructor     
     
-
-    
-    //A static function allows to make a calls to it without
-    //instantiating the class.  In other words with using the 
-    //new keyword, for example
-    //$dbh = new DbHandler();
-    //$dbh->dbConnectError(1045);
-    
-    //Instead we can call it directly like this
-    //$this::dbConnectError(1045);
     private static function dbConnectError($code){
         switch($code){
             case 1045:
@@ -134,6 +124,7 @@ class DbHandler {
         return $data;
        
     }
+    
      public function createUser($email, $password, $first_name, $last_name) {        
 
         // First check if user already existed in db
@@ -244,19 +235,9 @@ class DbHandler {
         return $data;
         
     }//end activeUser
-        /**
-     * checkLogin
-     * Check user login
-     * @param type $email
-     * @param type $password
-     * @return boolean
-     */
+    
     public function checkLogin($email, $password) {
-        // fetching user by email
-        //var_dump($email);
-        //var_dump($password);
-        //var_dump(PassHash::hash($password));
-        //exit();
+      
         //1. Check if email exists
 
         $stmt = $this->conn->prepare("SELECT COUNT(*) from users WHERE email = :email");
@@ -297,6 +278,29 @@ class DbHandler {
         $num_rows = $stmt->fetchColumn();
 
         return $num_rows > 0;
+    }
+    
+    // search box
+     public function getSearch($s) {
+        try {
+
+            $sql = "SELECT demoID, demoName, chapterID 
+                    FROM demo                     
+                    WHERE demoName like '%$s%'";
+
+            $stmt = $this->conn->query($sql);
+            $search = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $data = array(
+                'error' => false,
+                'items' => $search
+            );
+        } catch (Exception $ex) {
+            $data = array(
+                'error' => true,
+                'message' => $ex->getMessage()
+            );
+        }
+        return $data;
     }
 
 }

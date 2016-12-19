@@ -19,9 +19,7 @@
             $reg_errors = array();
 
             //1.Check for firstname (characters, apos, period, space and dash b/w 2 and 60
-            /* rules:  between 2, 45 characters
-              letters A-Z, case-insensitive (i)
-              space, apostrophe, period, hyphen */
+           
             if (preg_match('/^[A-Z \'.-]{2,45}$/i', $_POST['firstname'])) {
                 $firstname = trim($_POST['firstname']);
             } else {
@@ -42,12 +40,7 @@
             }
 
             // 3.Check for a password and match against the confirmed password:
-            /* rules:  Must be betwen 6 and 20 characters long with 
-              at least one lowercase letter, one uppercase letter, and
-              one number.
-              ?=   zero-width lookahead assertion:  makes matches based upon what
-              follows a character.
-             */
+           
             if (preg_match('/^(\w*(?=\w*\d)(?=\w*[a-z])(?=\w*[A-Z])\w*){6,20}$/', $_POST['password1'])) {
                 if ($_POST['password1'] == $_POST['password2']) {
                     $password2 = strip_tags($_POST['password2']);

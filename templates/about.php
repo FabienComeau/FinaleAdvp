@@ -41,72 +41,7 @@
                     </p>
                 </div>
                 <div class="col-md-2">
-<!--                    <div class="block-heading-two">
-                        <h3><span>Our Solution</span></h3>
-                    </div>		-->
-                    <!-- Accordion starts -->
-<!--                    <div class="panel-group" id="accordion-alt3">
-                         Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. 
-                        <div class="panel">	
-                             Panel heading 
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseOne-alt3">
-                                        <i class="fa fa-angle-right"></i> Accordion Heading Text Item # 1
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne-alt3" class="panel-collapse collapse">
-                                 Panel body 
-                                <div class="panel-body">
-                                    Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseTwo-alt3">
-                                        <i class="fa fa-angle-right"></i> Accordion Heading Text Item # 2
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo-alt3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseThree-alt3">
-                                        <i class="fa fa-angle-right"></i> Accordion Heading Text Item # 3
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree-alt3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion-alt3" href="#collapseFour-alt3">
-                                        <i class="fa fa-angle-right"></i> Accordion Heading Text Item # 4
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseFour-alt3" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Sed ut perspiciaatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-                    <!-- Accordion ends -->
+
 
                 </div>
 
