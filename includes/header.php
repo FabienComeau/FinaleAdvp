@@ -1,7 +1,5 @@
 <?php
 ob_start();
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,24 +20,35 @@ ob_start();
         <!--[if lt IE 9]>
               <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
-        <?php
-        session_start();
-        ?>
+        <style>
+            .navbar-brand img{ width: 85%;}
+
+            @media (max-width: 850px) {
+                .navbar-brand img{ width: 60%;
+                                    float: left;}}
+            
+            @media (max-width: 650px) {
+                .navbar-brand img{ width: 90%;}}
+
+        </style>
+<?php
+session_start();
+?>
     </head>
     <body>
-        <?php
+<?php
 
-        //var_dump($_SESSION);
-        function __autoload($class) {
-            require_once 'classes/' . $class . '.php';
-        }
+//var_dump($_SESSION);
+function __autoload($class) {
+    require_once 'classes/' . $class . '.php';
+}
 
-        //instantiate the database handler
-        $dbh = new DbHandler();
+//instantiate the database handler
+$dbh = new DbHandler();
 
-        //$data=$dbh->getDemoList();
-        //var_dump($data);
-        ?>
+//$data=$dbh->getDemoList();
+//var_dump($data);
+?>
         <!--<div id="wrapper" class="home-page">-->
         <div class="topbar">
             <div class="container">
@@ -61,8 +70,7 @@ ob_start();
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.php"><img src="" alt="logo"/></a>
-
+                        <a class="navbar-brand" href="index.php"><img src="img/logo3.png" alt="logo"/></a>
                     </div>
                     <div class="navbar-collapse collapse" class="breadcrumb">
                         <ul class="nav navbar-nav" >
