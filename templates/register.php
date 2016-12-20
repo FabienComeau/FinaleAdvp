@@ -74,19 +74,19 @@
                     //===================== NEW STUFF ========================//
                     //1.  Prepare to send email
                     $siteURL = "http://localhost:8888/FinaleAdvp/activate.php?x=".urlencode($email)."&y=$active";
-                    $replyToEmail = 'knowledge@programming.oultoncollege.com';
-                    $replyToName = 'Knowledge Is Power';
-                    $mailSubject = 'Knowledge Is Power Registration';                       
-                    $messageTEXT = "Thank you for registering at Knowledge Is Power.\n\n
+                    $replyToEmail = 'fabiencomeau5@gmail.com';
+                    $replyToName = 'ADVP WEB Study';
+                    $mailSubject = 'ADVP WEB Study Registration';                       
+                    $messageTEXT = "Thank you for registering at ADVP WEB Study.\n\n
                                     To activate your account please click on this link:  "
                                    .$siteURL;
-                    $messageHTML = "<p><strong>Thank you for registering at Knowledge is Power.</strong></p> 
+                    $messageHTML = "<p><strong>Thank you for registering at ADVP WEB Study.</strong></p> 
                                     <p>To activate your account, please click on this link:</p>
                                     <a href='$siteURL'>Activate our Account</a>";
                                     
                                     
                     $fromEmail = 'fabiencomeau5@gmail.com';
-                    $fromName = 'Knowledge Is Power';
+                    $fromName = 'ADVP WEB Study';
                     $toEmail = $email;
                     $toName = $firstname.' '.$lastname;                   
                     
