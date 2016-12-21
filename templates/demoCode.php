@@ -11,7 +11,7 @@
     <div class="container content">		
   
         <div class="row">       
-<button onclick="goBack()">Go Back</button>
+<button class="btn btn-warning" onclick="goBack()">Go Back</button>
 
 <script>
 function goBack() {

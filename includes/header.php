@@ -10,7 +10,7 @@ ob_start();
         <meta name="description" content="" />
         <meta name="author" content="http://webthemez.com" />
         <!-- css -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">     
         <link href="css/style.css" rel="stylesheet" />
         <!--pluging for prism-->
         <link href="prism.css" rel="stylesheet" type="text/css"/>
@@ -21,6 +21,10 @@ ob_start();
               <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
             <![endif]-->
         <style>
+            
+                input.form-control {
+                                    color: #FCB017;}
+            
             .navbar-brand img{ width: 85%;}
 
             @media (max-width: 850px) {
@@ -33,6 +37,16 @@ ob_start();
         </style>
 <?php
 session_start();
+
+if(isset($_SESSION['LAST_ACTIVITY']) 
+        && (time() -$_SESSION['LAST_ACTIVITY']>1800)){
+    //last request was more than 30 minutes ago
+    session_unset(); //unset session variable
+    session_destroy(); //destroy session data in storage    
+}
+
+//Update LAST_ACTIVITY time stamp
+$_SESSION['LAST_ACTIVITY'] = time();
 ?>
     </head>
     <body>
@@ -70,14 +84,14 @@ $dbh = new DbHandler();
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.php"><img src="img/logo3.png" alt="logo"/></a>
+                        <a class="navbar-brand" href="index.php"><img src="/img/logo3.png" alt="logo"/></a>
                     </div>
                     <div class="navbar-collapse collapse" class="breadcrumb">
                         <ul class="nav navbar-nav" >
 <?php
 include 'includes/navbar.php'
 ?> 
-                            <form method="get" action="/FinaleAdvp/search.php" class="navbar-form navbar-right">
+                            <form method="get" action="/search.php" class="navbar-form navbar-right">
                                 <div class="right-inner-addon">
                                     <input class="form-control typeahead tt-query" type="text" placeholder="Search..." id="s" name="s" autocomplete="off" spellcheck="false"/>
                                     <input type="submit" style="height: 0px; width: 0px; border: none; padding: 0px;" hidefocus="true" />

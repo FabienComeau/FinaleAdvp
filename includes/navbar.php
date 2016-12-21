@@ -5,6 +5,7 @@ background: -moz-linear-gradient(top,  #fcb017 0%, #f9d895 58%, #f9d895 58%, #f9
 background: -webkit-linear-gradient(top,  #fcb017 0%,#f9d895 58%,#f9d895 58%,#f9dca2 78%,#f9da9a 98%);
 background: linear-gradient(to bottom,  #fcb017 0%,#f9d895 58%,#f9d895 58%,#f9dca2 78%,#f9da9a 98%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', endColorstr='#f9da9a',GradientType=0 );
+border: 1px solid #db9304;
 
     }
     
@@ -19,19 +20,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcb017', end
 
 $home = array(
     'page' => 'Home',
-    'url' => '/FinaleAdvp/index.php',
+    'url' => '/index.php',
     'icon' => 'home'
 );
 
 $about = array(
     'page' => 'About Us',
-    'url' => '/FinaleAdvp/about_us.php',
+    'url' => '/about_us.php',
     'icon' => 'cultery'
 );
 
 $services = array(
     'page' => 'Services',
-    'url' => '/FinaleAdvp/services.php',
+    'url' => '/services.php',
     'icon' => 'phone'
 );
 
@@ -67,14 +68,13 @@ foreach ($pages as $page => $list) {
                                 <?php
                                 if (empty($_SESSION['user_id'])) {
                                     ?>
-                                    <li><a href="/FinaleAdvp/register.php">Register</a>
-                                    <li><a href="/FinaleAdvp/login.php">Login</span></a>
+                                    <li><a href="/register.php">Register</a>
+                                    <li><a href="/login.php">Login</span></a>
 
     <?php
 } else {
-    ?>
-                                    <li><a href="#">My Account</a>
-                                    <li><a href="/FinaleAdvp/logout.php">Logout</a>
+    ?>                                    
+                                    <li><a href="/logout.php">Logout</a>
 
     <?php
 }

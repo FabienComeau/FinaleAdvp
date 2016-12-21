@@ -73,7 +73,7 @@
                     
                     //===================== NEW STUFF ========================//
                     //1.  Prepare to send email
-                    $siteURL = "http://localhost:8888/FinaleAdvp/activate.php?x=".urlencode($email)."&y=$active";
+                    $siteURL = "http://advpwebstudy.digitaltheorysolution.com/activate.php?x=".urlencode($email)."&y=$active";
                     $replyToEmail = 'fabiencomeau5@gmail.com';
                     $replyToName = 'ADVP WEB Study';
                     $mailSubject = 'ADVP WEB Study Registration';                       

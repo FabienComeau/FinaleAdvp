@@ -47,7 +47,7 @@
                     <div class="about-logo">
                         <h3>SQL <span class="color">Demos</span></h3>
                         <p>For the months of October and November, SQL queries where covered in class. A list of the chapters will be excusable along with the demos that went along with them.  
-                            <br>!!!!!!!!!!!Just to make it look better I would like to put another blerb here about SQL to fill up the space  sgv drbvfdgvrefgv fdgvfdcv fbfdhuhvlksjlkjfdo!!!!!!!!!!!!!</p>
+                            
                     </div>  
                 </div>
             </div>
@@ -95,7 +95,7 @@
               <td>$demoName</td>
               
               <td>$chapterNumber</td>    
-              <td><a href='/FinaleAdvp/demoCode.php?id=$demoid'>Demo $demoid</a>              
+              <td><a href='/demoCode.php?id=$demoid'>Demo $demoid</a>              
               </td>
               </tr>";
                         endforeach;

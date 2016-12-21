@@ -7,6 +7,7 @@ Note: Licence under Creative Commons Attribution 3.0
 @import url('font-awesome.css');  
 @import url('animate.css');
 
+
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:300;
@@ -1701,7 +1702,9 @@ header  .navbar-nav > li > a{
 input.form-control, textarea.form-control {
     background: transparent;
     border-color: #636363;
+    
 }
+
 .help-block ul li {
     color: red;
     text-decoration: none;

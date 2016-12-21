@@ -5,7 +5,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="widget">
                     <h5 class="widgetheading">Our Contact</h5>
                     <address>
@@ -18,18 +18,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-lg-3">
-                <div class="widget">
-                    <h5 class="widgetheading">Quick Links</h5>
-                    <ul class="link-list">
-                        <li><a href="#">Latest page</a></li>
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>                        
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3">
+        
+            <div class="col-lg-4">
                 <div class="widget">
                     <h5 class="widgetheading">Documenation</h5>
                     <ul class="link-list">                       
@@ -41,12 +31,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
                 <div class="widget">
                     <h5 class="widgetheading">Common sites</h5>
                     <ul class="link-list">
                         <li><a href="http://www.w3schools.com/">W3Schools</a></li>
-                        <li><a href="hthttps://www.w3.org/">W3C</a></li>
+                        <li><a href="https://www.w3.org/">W3C</a></li>
                         <li><a href="https://cdnjs.com/">CDNJS Libraries</a></li>
                         <li><a href="http://bootsnipp.com/">Bootsnipp</a></li>
                     </ul>
@@ -70,7 +60,7 @@
     </div>
 </footer>
 </div>
-<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+<button type="button" class="scrollup"><span class="glyphicon glyphicon-menu-up active"></span></button>
 <!-- javascript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

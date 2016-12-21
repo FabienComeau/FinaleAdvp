@@ -54,12 +54,12 @@
                 //setup PHPMailer properties
                 $mail->isSMTP();
                 $mail->SMTPDebug=0;
-                $mail->Host='smtp.gmail.com';
-                $mail->Port=465;
+                $mail->Host='mail.digitaltheorysolution.com';
+                $mail->Port=25;
                 $mail->SMTPAuth=true;
-                $mail->Username='fabiencomeau5@gmail.com';
+                $mail->Username='postmaster@digitaltheorysolution.com';
                 $mail->Password='Bigbang01';
-                $mail->SMTPSecure='ssl';
+                //$mail->SMTPSecure='ssl';
                 
                 $mail->From=$this->fromemail;
                 $mail->FromName=$this->fromname;
