@@ -1,3 +1,9 @@
+<style>
+    .btn{
+        float: right;
+    }
+</style>
+
 <section id="inner-headline">
     <div class="container">
         <div class="row">
